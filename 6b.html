@@ -1,0 +1,35 @@
+<html>             
+<head>   
+<title>SUM OF N NATURAL NUMBERS</title>
+<script>
+function calculatesum(num)
+{
+    var sum=0,i;
+	var n=parseInt(document.getElementById("inp").value);
+	for(i=0;i<=n;i++){
+	sum+=i;
+}
+document.getElementById("sumoutput").value=sum;
+}
+ </script>
+</head>
+<body>
+<center><h1>SUM OF N NATURAL NUMBERS</h1></center>
+<div>
+<table align="center">
+<tr>
+<td><label for="inp">Enter a number N:</label></td>
+<td><input type="number" id="inp" placeholder="number" size="30px"></td>
+
+</tr>
+<tr>
+<td><label for="res">Result:</label></td>
+<td><input type="number" id="res" size="30px"></td>
+</tr>
+<tr>
+<td><input type="button" value="calculate" onclick="calculatesum(this.value);"></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
